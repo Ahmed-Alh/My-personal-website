@@ -1,3 +1,4 @@
+/*dark mode thing*/
   @media (prefers-color-scheme: dark) {
     body {
       background-color: black;
@@ -5,8 +6,9 @@
     }
   }
 body {
-  background-color:#99ccff
+  background-color:#003366
   ;
-  color: black;
-  font-family: Verdana;
+  color: white;
+  font-family: 'Inria Serif', serif;
+  font-size: 15px
 }
