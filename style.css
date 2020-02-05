@@ -1,14 +1,10 @@
-/*dark mode thing*/
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: black;
-      color: #ccc;
-    }
-  }
 body {
-  background-color:#003366
+  background-color: #323030
   ;
   color: white;
   font-family: 'Inria Serif', serif;
-  font-size: 15px
+  font-size: 17px
+}
+.links {
+color: red;
 }
