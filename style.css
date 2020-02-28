@@ -1,14 +1,14 @@
 body {
   background-color: #323030
   ;
-  color: white;
+  color: #f2f2f2;
   font-family: 'Inria Serif', serif;
-  font-size: 17px
+  font-size: 17px;
 }
 .links {
 background-color: #413a3a;
 width: 210px;
-  border: 10px solid #383232;
+  border: 15px solid #383232;
   padding: 8px;
   margin: 10px;
 }
