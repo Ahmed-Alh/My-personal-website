@@ -5,6 +5,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
+p {
+  margin-right: 150px;
+  margin-left: 80px;
+}
 .links {
 background-color: #413a3a;
 width: 210px;
