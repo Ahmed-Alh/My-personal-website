@@ -9,6 +9,9 @@ p {
   margin-right: 150px;
   margin-left: 80px;
 }
+a {
+  color: cadetblue;
+}
 .links {
 background-color: #413a3a;
 width: 210px;
