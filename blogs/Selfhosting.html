@@ -2,18 +2,22 @@
 <html>
     <link href="/style.css" rel="stylesheet" type="text/css">
     <head>
+
         <title>Selfhosting; A guide</title>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="Keywords" content="Selfhosting, linux, gnu/linux, home server">
     </head>
     <body>
-        <h1>Selfhosting; A guide<sub style="font-size:50%;"> By Ahmed Alhamadi on 1/04/2020</sub></sub></h1>
+        <br>
+        <p><a href="/index.html" style="color: cadetblue;"> Home page</a> </p>
+        <hr>
+        <h1>Selfhosting; A guide<sub style="font-size:50%;"> <sub>By Ahmed Alhamadi on 1/04/2020</sub></h1>
         <p1>In the age of privacy invasions and data breaches, it's now more important than ever to store all of your data locally instead of having your data in some company's data farm. A great way to do this is to make your own server at home to store all of your data in it, so that you can access it sort of like a network attached storage (NAS). This guide is going to try to explain how you can start selfhosting.
         </p1>
         <h2>Why should you Selfhost?</h2>
         <p2>There are alot of reasons as to why you should selfhost, like: <br>
         <ul>
         <li>Total control over your data and what you can store on your server.</li>
-        <li>More private than using a service by a company like Google. (I.e no one can snoop in on your data and analyze it)</li>
+        <li>More private than using a service by a company like Google. (i.e no one can snoop in on your data and analyze it)</li>
         <li>inherently more secure than using an online namebrand service. As big services are targets for hackers, while your small home server wouldn't be.</li>
         <li>You don't need internet to access your data, since you'll have it all stored in your home.</li>
         <li>Cheaper than using a paid service or a Virtual private server (VPS), as you don't have to pay monthy fees (except for your electricity bill) or subscribe to a service to access your data. And while you're gonna pay more initially for a computer than using a VPS, it will be a bigger bang for your buck than if you bought a Vps with the same configurations. </li>
@@ -21,16 +25,16 @@
         Moreover, you can selfhost your data on most, if not any computer. Even  <a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/" style="color: cadetblue;">a $35 Raspberry pi </a> or an old used Lenovo Thinkpad off of Ebay will suffice.
     </p2>
     <h2>How you can selfhost</h2>
-    <p1>"How can I start selfhosting?" you might as. Well, you'll first need the following:</p1>
+    <p1>"How can I start selfhosting?" you might ask. Well, you'll first need the following:</p1>
     <ol>
-    <li>A Computer, preferrably one with a gigabit ethernet port</li>
+    <li>A Computer, preferrably one with a gigabit ethernet port. </li>
     <li>An Internet connection, Obviously</li>
-    <li>An ethernet jack. (While a wireless home server is possible, it is highly preffered to use a wired internet connection as your home server will be used to move data back and forth, and that might saturate your wifi bandwifth, leaving it very slow.) </li>
+    <li>An ethernet jack. (While a wireless home server is possible, it is highly prefered to use a wired internet connection as your home server will be used to move data back and forth, and that might saturate your wifi bandwifth, leaving it very slow.) </li>
     <li>An operating system other than Windows (more on that later)</li>
     <li>Storage, such as a hard dive (an external one can be used, but they tend to be less reliable than standalone hard drives)</li>
     <li>Basic knowledge of networking and computers will be helpful.</li>
     </ol>
-    <h3>Step 1: pick an operating system.</h3>
+    <h3>Step 1: Pick an operating system.</h3>
     <p2>without an operating system (OS) you just have a metal box of capacitors and PCBs. Picking an operating system is the first step in making a home server.<br> You shouldn't be using the desktop version of  Windows, since it is only intended for desktop use. That's you we have to use Gnu/Linux (what is generally known as linux). There are many flavors of linux (distributions), and you'll have to choose one of them. Personally, I'd pick one of the following:</p2>
     <ul>
         <li>OpenMediaVault (OMV), for the person who prefers a more basic and simple interface.</li>
@@ -45,8 +49,8 @@
     <h3>Step 3: finalize the installation and set up some other things</h3>
     <p2>Now for the final part; setting up and installing some things for turning your newly made linux machine into an actual home server. now this depends on what you want your server to do. for example, if you want to have a Network attached storage where you can store your data and move that data more easily between devices, then you have two options:
     <ul>
-        <li>You can setup a samba share on your server, which will act as a basic way to acess your data and uploading and downloading from your server</li>
-        <li>Or you can set up Nextcloud to have a Google drive of a Dropbox equivalent hub with a document editor and plugins to fit your needs.</li>
+        <li>You can setup a samba share on your server, which is a file sharing protocol that works well on windows as well as linux,</li>
+        <li>Or you can set up <a href="https://nextcloud.com/"> Nextcloud</a> to have a Google drive of a Dropbox equivalent hub with a document editor and plugins to fit your needs.</li>
     </ul>
     You might also want to access your server over the internet, so if you're planing to do that then make sure to keep everything secure and passwords long and complicated just in case someone stumbles upon your server and tries to brute force his way into your machine.     
     </p2>
