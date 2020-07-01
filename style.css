@@ -7,10 +7,18 @@ body {
  margin-left: 30px;
  margin-right: 30px;
  line-height: inherit;
+ text-align: inherit;
 
 }
-h1 {
-  text-align: center;
+
+h {
+  text-align: left;
+}
+
+code {
+
+background-color: #858484;
+
 }
 
 a {
@@ -18,11 +26,13 @@ a {
   text-decoration:none;
 }
 
-.links {
+.Nav {
+  text-align: left;
   border-radius: 25px;
   background-color: #413a3a;
-  width: 210px;
+  width: 100%;
     border: 15px solid #383232;
     padding: 8px;
     margin: 10px;  
 }
+
