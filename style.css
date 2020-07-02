@@ -1,6 +1,5 @@
 body {
-  background-color: #323030
-  ;
+  background-color: #323030;
   color: #f2f2f2;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -11,8 +10,14 @@ body {
 
 }
 
-h {
-  text-align: left;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
 }
 
 code {
@@ -22,17 +27,14 @@ background-color: #858484;
 }
 
 a {
-  color: cadetblue;
+  color: #83d0d2;
   text-decoration:none;
 }
 
 .Nav {
-  text-align: left;
-  border-radius: 25px;
-  background-color: #413a3a;
+  border-width: 100%
+  border-radius: 5px;
+  background-color: #757575;
   width: 100%;
-    border: 15px solid #383232;
-    padding: 8px;
-    margin: 10px;  
+  margin-left: -26px
 }
-
