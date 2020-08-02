@@ -10,6 +10,11 @@ body {
 
 }
 
+sub
+{
+  font-size: 50%;
+}
+
 ul {
   //margin: 0;
   padding: 0;
