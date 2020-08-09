@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Ahmed's Blog</title>
+<link>https://ahmedalhamadi.neocities.org/</link>
+<description>The best blog on the internet</description>
+<lastBuildDate>Sunday, August 9, 2020</lastBuildDate>
+  <item>
+  <title>A basic guide to Selfhosting.</title>
+  <link>https://ahmedalhamadi.neocities.org/articles/selfhosting/Selfhosting.html</link>
+  <description>In the age of privacy invasions and data breaches, it's now more important than ever to store all of your data locally instead of having your data in some company's data farm. A great way to do this is to make your own server at home to store all of your data in it, so that you can access it sort of like a network attached storage (NAS). This guide is going to try to explain how you can start selfhosting.</description>
+  <pubDate>Saturday, April 4, 2020</pubDate>
+
+  </item>
+</channel>
+
+</rss>
