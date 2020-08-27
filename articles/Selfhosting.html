@@ -20,8 +20,8 @@
           </div>
           
 
-        <h1> A basic guide to Selfhosting.<sub>Published on: 1/04/2020, edited on 7/12/2020</sub></h1>
-        <p1>In the age of privacy invasions and data breaches, it's now more important than ever to store all of your data locally instead of having your data in some company's data farm. A great way to do this is to make your own server at home to store all of your data in it, so that you can access it sort of like a network attached storage (NAS). This guide is going to try to explain how you can start selfhosting.
+        <h1> A basic guide to Selfhosting.<sub><a href="https://github.com/Ahmed-Alh/My-personal-website/commit/6a14e760138b5183fef010bb36372ef29dbcd763">Published on: 1/04/2020</a>, edited on 28/07/2020</sub></h1>
+        <p1>In the age of privacy invasions and data breaches, it's now more important than ever to store all of your data locally instead of having your data in some company's data farm. A great way to do this is to set up your own server. This guide is going to try to explain how you can start selfhosting.
         </p1>
 
 
@@ -30,21 +30,25 @@
         <ul>
         <li>Total control over your data and what you can store on your server.</li>
         <li>More private than using a service by a company like Google. (i.e no one can snoop in on your data and analyze it)</li>
-        <li>inherently more secure than using an online namebrand service. As big services are targets for hackers, while your small home server would be a way smaller target.</li>
-        <li>You don't need internet to access your data, since you'll have it all stored in your home.</li>
-        <li>Cheaper than using a paid service or a Virtual private server (VPS), as you don't have to pay monthy fees (except for your electricity bill) or subscribe to a service to access your data. And while you're gonna pay more initially for a computer than using a VPS, it will be a bigger bang for your buck than if you bought a Vps with the same configurations. </li>
+        <li>inherently more secure than using an online namebrand service, as those are bigger targets for hackers, and they may have been secured incorectly (passwords stored in plaintext, stuff like that.).while your small home server would be a way smaller target .</li>
+        <li>You don't need internet to access your data, if you are self hosting locally.</li>
+        <li>Cheaper than paying for each service individually, as you can run multiple services on one server (for example: paying for a netflix and google drive storage and other things individually is gonna cost more than renting a vps or having a home server in the long run.)</li>
         </ul>
-        Moreover, you can selfhost your data on most, if not any computer. Even  <a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">a $35 Raspberry pi </a> or an old Laptop will suffice.
+        Moreover, you can selfhost your data on most, if not any spare computer. Even  <a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">a $35 Raspberry pi 4</a><sup><a href="#additional-points">(1)</a></sup> or an old Laptop will suffice.
     </p2>
     <h2>How you can selfhost</h2>
     <p1>"How can I start selfhosting?" you might ask. Well, you'll first need the following:</p1>
     <ol>
-    <li>A Computer with a gigabit ethernet port. </li>
     <li>An Internet connection, Obviously</li>
-    <li>An ethernet jack. (While a wireless home server is possible, it is highly prefered to use a wired internet connection as your home server will be used to move data back and forth, and that might saturate your wifi network, leaving it very slow.) </li>
     <li>A *Nix operating system (cause Windows Server is a meme.)</li>
-    <li>Storage, such as a hard dive (an external one can be used, but they tend to be less reliable than standalone hard drives)</li>
     <li>knowledge of networking and computers will be helpful.</li>
+    </ol>
+
+    <p2>If you're setting up a home server, you will also need:</p2>
+    <ol>
+        <li>A Computer with a gigabit ethernet port. </li>
+        <li>An ethernet jack.<sup><a href="#additional-points">(2)</a></sup></li>
+        <li>Storage, such as a hard dive (an external one can be used, but they tend to be less reliable than standalone hard drives)</li>
     </ol>
 
 
@@ -52,27 +56,36 @@
     <p2>without an OS, you just have a metal box of capacitors and PCBs. Picking an operating system is the first step in making a home server.<br> I'm going to use Gnu/linux here, but Bsd-based OS's can work as well. There are many distros to choose from. Personally, I'd pick one of the following:</p2>
     <ul>
         <li>OpenMediaVault (OMV), a simple to use operating system built for NASes and home servers with a webui.</li>
-        <li>Debian, it's very stable, but default Debian has some pretty outdated packages. </li>
+        <li>TrueNAS (previously FreeNAS) for a more professional grade OMV alternative based on freeBSD, with nice graphs and support for OpenZFS.</li>
+        <li>Debian, it's very stable, but default Debian has some pretty outdated, but stable packages. </li>
         <li>Fedora Server and CentOS, They are both based on RHEL and they offer more up to date and stable packages. From what I know, CentOS is more stable and better for server use than Fedora Server</li>
         <li>Arch linux, if you want a cutting edge server (and bragging rights). </li>
    </ul>
-    <p2>All Gnu/Linux distributions can work well for server use (with tweaking and optimizing of course) but there are specific things you need to look out for in a distribution, like how frequent are the packages upgraded, how stable is the distribution itself, etc.</p2>
-    <h3>Step 2: Install it on your Computer.</h3>
-    <p2>This step is pretty easy (for most distros at least, looking at you Arch Linux), just get a flash drive, download the ISO, flash it on the flash drive using <a href="https://rufus.ie/">Rufus</a>  for windows (<a href="https://www.balena.io/etcher/"> BalenaEtcher</a> if you're a normie.) or DD for *nix or macOS, complete the installation, then Bob's your uncle! You're half of the way there. Now you just need to install a couple of things that are essential for a home server.</p2>
-    <h3>Step 3: finalize the installation and set up some other things</h3>
+    <p2>Most Gnu/linux OSes can work well for server use (with a bit of tweaking and optimizing of course) but there are specific things you need to look out for in a distribution, like how frequent are the packages updated, how stable is the distribution itself, etc.</p2>
+    <h3>Step 2: Install it on your machine (home server only).</h3>
+    <p2>This step is pretty easy (for most distros at least, looking at you Arch Linux), just get a flash drive, download the ISO, flash it on the flash drive using <a href="https://rufus.ie/">Rufus</a>  for windows (<a href="https://www.balena.io/etcher/"> BalenaEtcher</a> if you're a normie.) or DD for *nix or macOS, complete the installation, then Bob's your uncle! <br> If you are using a VPS, then the operating systems are a one click install in the VPS setup page.</p2>
+    
+    <h3>Step 3: Securing your server.</h3>
+    <p2>If you're ever gonna set up a server, no matter what it's use case is, or what you have on it, you must secure it properly to prevent any unwanted breaches. this can be done by <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2">replacing the SSH password with a SSH key</a>, Disabling root login, Securing your services with HTTPS instead of HTTP, and regularly updating your software in case there is a vulnerability, Among others.  </p2>
+    
+    <h3>Step 4: Recommended software and self hosting ideas.</h3>
 
 
-    <p2>Now for the final part; setting up and installing some things for turning your newly made linux machine into an actual home server. now this depends on what you want your server to do. for example, if you want to have a Network attached storage where you can store your data and move that data more easily between devices, then you have two options:
+    <p2>Now that you have a server up and running, it's time to start filling it up with software to make it useful. I'd recommend the following software for the following use cases:</p2>
     <ul>
-        <li>You can setup a samba share on your server, For Basic file sharing,</li>
-        <li>Or you can set up <a href="https://nextcloud.com/"> Nextcloud</a> to have a Google drive or a Dropbox equivalent hub with a document editor and plugins to fit your needs.</li>
-        <li> If you want to have a locally hosted netflix, you can use <a href="https://www.plex.tv/"> Plex</a> or <a href="https://jellyfin.org/"> Jellyfin</a> to have your own at home netflix.
+        <li>samba share or Nextcloud for having a network storage solution.</li>
+        <li>Plex or Jellyfin for a selhosted Netflix.</li>
+        <li>Ampache for a self hosted spotify.</li>
+        <li>Qbittorrent-Nox, Deluge thinclient, transmission daemon and all other torrenting software for <b>Seeding linux distros, obviously.</b></li>
     </ul>
-    You might also want to access your server over the internet, so if you're planning to do that then make sure to keep everything secure with SSL and make your passwords long and complicated.
-    </p2>
-
 
     <h3>Step 4: profit?</h3>
-    <p2>with all of that done, you should have a fully functioning home server made to suit your needs. Of course, there are other things that you're going to need to take care of, but that's beyond the scope of this blog. thanks for reading, and I'll see you in the next one. </p2>
+    <p2>You should now have a server built to fit your needs. Very nice 👌</p2>
+
+    <h3 id="additional-points">Additional points:</h3>
+    <ol>
+        <li>It is HIGHLY recommended that you do not use a raspberry pi earlier than the raspberry pi 4 if you want to set up a home server, as earlier versions do not have usb3 or gigabit ethernet, so on top of the already slow USB2 file transfer speeds, having 100MBit ethernet will slow file transfers to a crawl. At that point, it's just better to download whatever you want from the internet than from one of those.</li>
+        <li>While a wireless home server is possible, it is highly prefered to use a wired internet connection as your home server will be used to move data back and forth, and that might saturate your wifi network, leaving it very slow.</li>
+    </ol>
     </body>
 </html>
