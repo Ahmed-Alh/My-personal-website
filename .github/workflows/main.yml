@@ -1,0 +1,11 @@
+- name: ahmedalhamadi
+  # You may pin to the exact commit or the version.
+  # uses: bcomnes/deploy-to-neocities@14eaced049653056e7168805e59d739d941ead31
+  uses: bcomnes/deploy-to-neocities@v1.0.11
+  with:
+    # Neocities API token for site to deploy to
+    api_token: 51bdebb16b5a32ec687e42460fa76543
+    # Local folder to deploy to neocities
+    dist_dir: # default is public
+    # Delete orphaned files on neocities that don't exist in distDir
+    cleanup: 
