@@ -1,4 +1,4 @@
-- name: 
+- name: Deploy to Neocities
   # You may pin to the exact commit or the version.
   # uses: bcomnes/deploy-to-neocities@14eaced049653056e7168805e59d739d941ead31
   uses: bcomnes/deploy-to-neocities@v1.0.11
