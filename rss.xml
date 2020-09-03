@@ -10,9 +10,15 @@
 <language>en-us</language>
   <item>
   <title>A basic guide to Selfhosting.</title>
-  <link>https://ahmedalhamadi.neocities.org/articles/selfhosting/Selfhosting.html</link>
-  <description>In the age of privacy invasions and data breaches, it's now more important than ever to store all of your data locally instead of having your data in some company's data farm. A great way to do this is to make your own server at home to store all of your data in it, so that you can access it sort of like a network attached storage (NAS). This guide is going to try to explain how you can start selfhosting.</description>
+  <link>https://ahmedalhamadi.neocities.org/articles/Selfhosting.html</link>
+  <description>In the age of privacy invasions and data breaches, it's now more important than ever to store all of your data locally instead of having your data in some company's data farm. A great way to do this is to make your own server at home to store all of your data in it, so that you can access it sort of like a network attached storage (NAS). This guide is going to try to explain how you can start selfhosting. Check out the full article <a href:"https://ahmedalhamadi.neocities.org/articles/Selfhosting.html">here</a></description>
   <pubDate>Saturday, April 4, 2020</pubDate>
+  </item>
+    <item>
+  <title>RSS, and how to use it.</title>
+  <link>https://ahmedalhamadi.neocities.org/articles/rss.html</link>
+  <description>RSS,or Really Simple Syndication, is a way to basically subscribe to websites. You'd use an RSS reader to view the latest posts and updates to a website. Most it to view the latest news from a dozen news sites without having to install a specific mobile app or going to each website individually. Check out the full article <a href:"https://ahmedalhamadi.neocities.org/articles/rss.html">here</a></description>
+  <pubDate>Thursday, September 4, 2020</pubDate>
 
   </item>
 </channel>
