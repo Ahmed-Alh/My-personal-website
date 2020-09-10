@@ -76,3 +76,11 @@ a {
 .dropdown:hover .dropdown-content {display: block;} 
 
 .dropdown:hover .dropbtn {background-color: #626769;}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
