@@ -19,12 +19,14 @@
   <link>https://ahmedalhamadi.neocities.org/articles/rss.html</link>
   <description>RSS,or Really Simple Syndication, is a way to basically subscribe to websites. You'd use an RSS reader to view the latest posts and updates to a website. Most it to view the latest news from a dozen news sites without having to install a specific mobile app or going to each website individually. Check out the full article on my website.</description>
   <pubDate>Thursday, September 4, 2020</pubDate>
+  </item>
+
+  <item>
   <title>Gource, and how to vizualize your git projects.</title>
   <link>https://ahmedalhamadi.neocities.org/articles/gource.html</link>
   <description>Gource seems to be one of these things that I can’t get enough of. It allows you to visualize your git projects and its developments over time. It can look really nice sometimes, and can give you that little boost to continue building your project so that you can one day see it bloom in gource. Check out the full article on my website.</description>
   <pubDate>Thursday, March 11, 2021</pubDate>
-
   </item>
-</channel>
 
+</channel>
 </rss>
