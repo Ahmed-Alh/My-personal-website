@@ -5,7 +5,7 @@
 
         <title>Gource, and how to visualize your git projects.</title>
         <meta charset="UTF-8"  meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Keywords" content="Selfhosting, linux, gnu/linux, home server" name="description" content="Selfhosting; A guide">
+        <meta name="Keywords" content="Gource, linux, gnu/linux, git visualization" name="description" content="Gource, and how to visualize your git projects.">
     </head>
     <body>
         <div class="dropdown">
@@ -19,10 +19,22 @@
             </div>
           </div>
 <body>
-<h1>Gource and how to visualize your git projects</h1>
-<p>[[gource.jpg]] Gource seems to be one of these things that I can’t get enough of. It allows you to visualize your git projects and its developments over time. It can look really nice sometimes, and can give you that little boost to continue building your project so that you can one day see it bloom in gource. ## Get started: Getting started with gource is very easy, as it’s available on almost all distro repositories and on windows. to start using it, you first need to be inside a git project’s directory, then just type this into the terminal:</p>
-<pre><code>goruce</code></pre>
-<p>It’s that easy, and a window will open up and display the progress done on this git project. There are some knobs that you can tweak to suit your fancy, most of which are found in <a href="https://github.com/acaudwell/Gource/wiki">the Gorce wiki</a>. I’ll give you some of my favorites. ## My favorite Gource arguments: - <code>--hide dirnames</code> to hide directory names, since these can clog up the screen when using gource with bigger projecs. - <code>-f</code> to have the gource window be set to fullscreen. - <code>--file-idle-time 0</code> removes the spaces in which no commits are being made, which removes sudden breaks in the gource thing - <code>-s 0.1</code> Makes it go at a speed of 0.1 seconds per day, makes it go very fast. - and my most favorite, <code>--output-ppm-stream filename.ppm</code> which outputs the visualization into an uncompressed .ppm file, then you can use FFMPEG to turn it into a video file that you can share online.Here’s a video of someone using gource to visualize dogecoin:</p>
+<h1>Gource, and how to visualize your git projects.<br><sub><a href="https://github.com/Ahmed-Alh/My-personal-website/commit/1bfe75f0fd71fc2dd008fe9fe713fb6543cc871d"> Edited on 11/03/2021</a></sub></h1>
+<img src="/articles/images/gource.jpg" class="main";"> 
+<p>Gource seems to be one of these things that I can’t get enough of. It allows you to visualize your git projects and its developments over time. It can look really nice sometimes, and can give you that little boost to continue building your project so that you can one day see it bloom in gource. 
+<h2>Get started:</h2>
+<p>Getting started with gource is very easy, as it’s available on almost all distro repositories and on windows. to start using it, you first need to be inside a git project’s directory, then just type this into the terminal:</p>
+<code>goruce</code>
+<p>It’s that easy, and a window will open up and display the progress done on this git project. There are some knobs that you can tweak to suit your fancy, most of which are found in <a href="https://github.com/acaudwell/Gource/wiki">the Gorce wiki</a>. I’ll give you some of my favorites.
+ <h2>My favorite Gource arguments:</h2>
+ <ul>
+     <li><code>--hide filenames</code> to hide directory names, since these can clog up the screen when using gource with bigger projecs.</li>
+     <li> <code>-f</code> to have the gource window be set to fullscreen. </li>
+     <li> <code>--file-idle-time 0</code> removes the spaces in which no commits are being made, which removes sudden breaks in the gource thing </li>
+     <li><code>-s 0.1</code> Makes it go at a speed of 0.1 seconds per day, makes it go very fast.</li>
+     and my most favorite,
+     <li><code>--output-ppm-stream filename.ppm</code> which outputs the visualization into an uncompressed .ppm file, then you can use FFMPEG to turn it into a video file that you can share online.Here’s a video of someone using gource to visualize dogecoin:</li>
+ </ul>
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/-raEiK3sCSw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></p>
 <p>My only gripe about this argument is that the ppm files are WAY too big sometimes, since it’s a series of uncompressed images. Since my laptop has an anemic 256GB NVME SSD in it means that i can only record up to about 5 minutes. <br> Other than that, it’s an amazing piece of software that I belive everyone must try with their personal projects.</p>
 </body>
